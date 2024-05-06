@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Thu Apr 25 13:33:17 2024 as: nmap -sC -sV -oN nmap/initial 10.10.40.220
+Nmap scan report for 10.10.40.220
+Host is up (0.30s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-title: Apache2 Ubuntu Default Page: It works
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Apr 25 13:33:34 2024 -- 1 IP address (1 host up) scanned in 17.14 seconds

@@ -1,0 +1,15 @@
+# Nmap 7.94SVN scan initiated Wed May  1 14:31:19 2024 as: nmap -p- --min-rate 30000 -v -oN nmap/all_ports 10.10.159.59
+Increasing send delay for 10.10.159.59 from 0 to 5 due to 2111 out of 7036 dropped probes since last increase.
+Increasing send delay for 10.10.159.59 from 5 to 10 due to 1331 out of 4436 dropped probes since last increase.
+Increasing send delay for 10.10.159.59 from 320 to 640 due to 897 out of 2989 dropped probes since last increase.
+Warning: 10.10.159.59 giving up on port because retransmission cap hit (10).
+Nmap scan report for 10.10.159.59
+Host is up (0.33s latency).
+Not shown: 62710 closed tcp ports (reset), 2822 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+445/tcp open  microsoft-ds
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Wed May  1 14:31:31 2024 -- 1 IP address (1 host up) scanned in 12.14 seconds
