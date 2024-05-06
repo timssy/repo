@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Tue Apr 23 13:14:05 2024 as: nmap -sC -sV -oN nmap/initial 10.10.246.6
+Nmap scan report for 10.10.246.6
+Host is up (0.30s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Werkzeug httpd 2.0.3 (Python 3.10.2)
+|_http-title: Corridor
+|_http-server-header: Werkzeug/2.0.3 Python/3.10.2
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Apr 23 13:14:22 2024 -- 1 IP address (1 host up) scanned in 17.49 seconds

@@ -1,0 +1,9 @@
+# Nmap 7.94SVN scan initiated Mon Apr 22 20:01:29 2024 as: nmap -p- -oN nmap/all_ports 10.10.61.143
+Nmap scan report for 10.10.61.143
+Host is up (0.30s latency).
+Not shown: 65068 closed tcp ports (reset), 465 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+4512/tcp open  unknown
+
+# Nmap done at Mon Apr 22 20:21:21 2024 -- 1 IP address (1 host up) scanned in 1191.81 seconds
