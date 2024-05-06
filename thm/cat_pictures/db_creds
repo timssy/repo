@@ -1,0 +1,2 @@
+$dbuser = 'bn_phpbb';
+$dbpasswd = 'P@ssword';
