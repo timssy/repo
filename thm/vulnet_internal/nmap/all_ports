@@ -1,0 +1,21 @@
+# Nmap 7.94SVN scan initiated Sat Apr 27 18:59:47 2024 as: nmap -p- -v -oN nmap/all_ports 10.10.41.207
+Nmap scan report for 10.10.41.207
+Host is up (0.30s latency).
+Not shown: 65522 closed tcp ports (reset)
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+111/tcp   open     rpcbind
+139/tcp   open     netbios-ssn
+445/tcp   open     microsoft-ds
+873/tcp   open     rsync
+2049/tcp  open     nfs
+6379/tcp  open     redis
+9090/tcp  filtered zeus-admin
+35673/tcp open     unknown
+35837/tcp open     unknown
+40355/tcp open     unknown
+40445/tcp open     unknown
+60437/tcp open     unknown
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sat Apr 27 19:14:56 2024 -- 1 IP address (1 host up) scanned in 909.50 seconds
