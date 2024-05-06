@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Sun Apr 28 13:48:56 2024 as: nmap -p- -vv -oN nmap/all_ports 10.10.71.194
+Nmap scan report for 10.10.71.194
+Host is up, received echo-reply ttl 63 (0.31s latency).
+Scanned at 2024-04-28 13:48:57 PST for 665s
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 63
+80/tcp open  http    syn-ack ttl 63
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sun Apr 28 14:00:02 2024 -- 1 IP address (1 host up) scanned in 666.10 seconds

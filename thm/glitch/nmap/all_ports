@@ -1,0 +1,10 @@
+# Nmap 7.94SVN scan initiated Sun Apr 28 19:41:42 2024 as: nmap -p- -vv -oN nmap/all_ports 10.10.20.62
+Nmap scan report for 10.10.20.62
+Host is up, received echo-reply ttl 63 (0.30s latency).
+Scanned at 2024-04-28 19:41:43 PST for 386s
+Not shown: 65534 filtered tcp ports (no-response)
+PORT   STATE SERVICE REASON
+80/tcp open  http    syn-ack ttl 63
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sun Apr 28 19:48:09 2024 -- 1 IP address (1 host up) scanned in 386.90 seconds
