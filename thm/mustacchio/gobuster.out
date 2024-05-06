@@ -1,0 +1,4 @@
+/index.php           [32m (Status: 200)[0m [Size: 1363]
+/home.php            [36m (Status: 302)[0m [Size: 1993][34m [--> ../index.php][0m
+/assets              [36m (Status: 301)[0m [Size: 194][34m [--> http://10.10.40.135:8765/assets/][0m
+/auth                [36m (Status: 301)[0m [Size: 194][34m [--> http://10.10.40.135:8765/auth/][0m
