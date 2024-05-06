@@ -1,0 +1,4 @@
+/.html               [33m (Status: 403)[0m [Size: 278]
+/.php                [33m (Status: 403)[0m [Size: 278]
+/index.html          [32m (Status: 200)[0m [Size: 10918]
+/gallery             [36m (Status: 301)[0m [Size: 316][34m [--> http://10.10.158.140/gallery/][0m
