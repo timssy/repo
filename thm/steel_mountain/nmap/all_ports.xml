@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Mon Mar 18 16:38:07 2024 as: nmap -sC -sV -T4 -p- -oA nmap/all_ports 10.10.2.21 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -T4 -p- -oA nmap/all_ports 10.10.2.21" start="1710751087" startstr="Mon Mar 18 16:38:07 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.2.21" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1710751087" endtime="1710751530"><status state="up" reason="reset" reason_ttl="127"/>
+<address addr="10.10.2.21" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65520">
+<extrareasons reason="reset" count="65520" proto="tcp" ports="1-79,81-134,136-138,140-444,446-3388,3390-5984,5986-8079,8081-47000,47002-49151,49157-49168,49171-65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft IIS httpd" version="8.5" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:internet_information_services:8.5</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-methods" output="&#xa;  Potentially risky methods: TRACE"><table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-server-header" output="Microsoft-IIS/8.5"><elem>Microsoft-IIS/8.5</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" product="Microsoft Windows Server 2008 R2 - 2012 microsoft-ds" ostype="Windows Server 2008 R2 - 2012" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ms-wbt-server" tunnel="ssl" method="table" conf="3"/><script id="ssl-date" output="2024-03-18T08:45:29+00:00; 0s from scanner time."><elem key="delta">0.0</elem>
+<elem key="date">2024-03-18T08:45:29+00:00</elem>
+</script><script id="ssl-cert" output="Subject: commonName=steelmountain&#xa;Not valid before: 2024-03-17T08:32:40&#xa;Not valid after:  2024-09-16T08:32:40"><table key="subject">
+<elem key="commonName">steelmountain</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">steelmountain</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">9651F475C31AAEDFA60BF9F62287E48D62DD827C6622C0A4FFDEF6BABE7986F11893D4A4E711E5E419C9D930E38C1A731D3F620CD3145AB3D6CFB32DF31F0339D20F88DEB5D98D694D3DF81E5354B4AAD9CA2D6598AA2BFB9680193931B91A6F2A12C8F5D4DA351D5EEFFCE919801868D4A2C34F1266231763670166F238C7FEA16311AA237D8F1FB28C081DACE8CE6E2426A873AC5BA0E02838EE03F04D69E33E461716A923F26302DA398FDD3406BBD0E999A89DA38CAEFB32E1A865AF3CE3EB0085E582228ECD52244A40D732E66AB61378A6922763490E35F945B753B37692B9FFAFDD437336A49F2B0A3E50979F29FB1DD6F53E3CC5DC1228A02B56129D</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-03-17T08:32:40</elem>
+<elem key="notAfter">2024-09-16T08:32:40</elem>
+</table>
+<elem key="md5">a4eba8c76549f941e957e0d27ce6f6c0</elem>
+<elem key="sha1">f7879cb75ff9752d3ea2b6f3e5e5b8681d105246</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC3jCCAcagAwIBAgIQHrhLb4845Y5EGGM8g2oQuTANBgkqhkiG9w0BAQUFADAY&#xa;MRYwFAYDVQQDEw1zdGVlbG1vdW50YWluMB4XDTI0MDMxNzA4MzI0MFoXDTI0MDkx&#xa;NjA4MzI0MFowGDEWMBQGA1UEAxMNc3RlZWxtb3VudGFpbjCCASIwDQYJKoZIhvcN&#xa;AQEBBQADggEPADCCAQoCggEBAJZR9HXDGq7fpgv59iKH5I1i3YJ8ZiLApP/e9rq+&#xa;eYbxGJPUpOcR5eQZydkw44wacx0/YgzTFFqz1s+zLfMfAznSD4jetdmNaU09+B5T&#xa;VLSq2cotZZiqK/uWgBk5MbkabyoSyPXU2jUdXu/86RmAGGjUosNPEmYjF2NnAWby&#xa;OMf+oWMRqiN9jx+yjAgdrOjObiQmqHOsW6DgKDjuA/BNaeM+RhcWqSPyYwLaOY/d&#xa;NAa70OmZqJ2jjK77MuGoZa884+sAheWCIo7NUiRKQNcy5mq2E3imkidjSQ41+UW3&#xa;U7N2krn/r91DczaknysKPlCXnyn7Hdb1PjzF3BIooCtWEp0CAwEAAaMkMCIwEwYD&#xa;VR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgQwMA0GCSqGSIb3DQEBBQUAA4IB&#xa;AQAJudF7V2g96IjI4NzxH43Ln/LYvnDJIbfW8CR5Jzy6CXVJXwLlM5Zs6oy8xOFh&#xa;7d0V/TFIgjV/c8Uc/vjOiOqmIJIGsQsTpXsOawlVz7TfPfGCEzcOnNGji7z7Qjq9&#xa;X2/qS2J9alfFZX4owFo8Fz1BN7W/iOeof0ONKl9/M4T5Qhtm4csrLYxk5y7P0IuF&#xa;pJLWQ4yA6PwgQUkiGlRSRDgwqwSRSRuoDGHt4UN4J+vAQ70rwPJw8xpvFeen5LpT&#xa;pdBKqojAuWO1cBECPnG1Cf7MS18wFvJGLYLON7TDZ6Bxorbbz8EO5HOqmMccuZSL&#xa;oDzgC3vhVllYKh9M//39KTPn&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="rdp-ntlm-info" output="&#xa;  Target_Name: STEELMOUNTAIN&#xa;  NetBIOS_Domain_Name: STEELMOUNTAIN&#xa;  NetBIOS_Computer_Name: STEELMOUNTAIN&#xa;  DNS_Domain_Name: steelmountain&#xa;  DNS_Computer_Name: steelmountain&#xa;  Product_Version: 6.3.9600&#xa;  System_Time: 2024-03-18T08:45:21+00:00"><elem key="Target_Name">STEELMOUNTAIN</elem>
+<elem key="NetBIOS_Domain_Name">STEELMOUNTAIN</elem>
+<elem key="NetBIOS_Computer_Name">STEELMOUNTAIN</elem>
+<elem key="DNS_Domain_Name">steelmountain</elem>
+<elem key="DNS_Computer_Name">steelmountain</elem>
+<elem key="Product_Version">6.3.9600</elem>
+<elem key="System_Time">2024-03-18T08:45:21+00:00</elem>
+</script></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="HttpFileServer httpd" version="2.3" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:rejetto:httpfileserver:2.3</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-title" output="HFS /"><elem key="title">HFS /</elem>
+</script><script id="http-server-header" output="HFS 2.3"><elem>HFS 2.3</elem>
+</script></port>
+<port protocol="tcp" portid="47001"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script></port>
+<port protocol="tcp" portid="49152"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49153"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49154"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49155"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49156"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49169"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49170"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<hostscript><script id="smb2-security-mode" output="&#xa;  3:0:2: &#xa;    Message signing enabled but not required"><table key="3:0:2">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2024-03-18T08:45:20&#xa;  start_date: 2024-03-18T08:32:29"><elem key="date">2024-03-18T08:45:20</elem>
+<elem key="start_date">2024-03-18T08:32:29</elem>
+</script><script id="nbstat" output="NetBIOS name: STEELMOUNTAIN, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: 02:cc:a1:7e:fc:a7 (unknown)"/><script id="smb-security-mode" output="&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script></hostscript><times srtt="220916" rttvar="1569" to="227192"/>
+</host>
+<runstats><finished time="1710751530" timestr="Mon Mar 18 16:45:30 2024" summary="Nmap done at Mon Mar 18 16:45:30 2024; 1 IP address (1 host up) scanned in 443.13 seconds" elapsed="443.13" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
