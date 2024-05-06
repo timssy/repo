@@ -1,0 +1,13 @@
+# Nmap 7.94SVN scan initiated Thu Apr  4 13:49:00 2024 as: nmap -p- -oN nmap/all_ports -vv 10.10.56.196
+Nmap scan report for 10.10.56.196
+Host is up, received syn-ack (0.22s latency).
+Scanned at 2024-04-04 13:49:00 PST for 1416s
+Not shown: 65531 closed tcp ports (conn-refused)
+PORT    STATE SERVICE      REASON
+22/tcp  open  ssh          syn-ack
+80/tcp  open  http         syn-ack
+139/tcp open  netbios-ssn  syn-ack
+445/tcp open  microsoft-ds syn-ack
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Thu Apr  4 14:12:36 2024 -- 1 IP address (1 host up) scanned in 1416.72 seconds
