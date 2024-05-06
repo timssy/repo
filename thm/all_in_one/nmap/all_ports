@@ -1,0 +1,1 @@
+# Nmap 7.94SVN scan initiated Wed Apr 24 11:13:34 2024 as: nmap -p- -v -oN nmap/all_ports 10.10.181.143
