@@ -1,0 +1,39 @@
+# Nmap 7.94SVN scan initiated Fri May  3 13:32:44 2024 as: nmap -p54321 -sC -sV -oN nmap/54321scan 10.10.97.86
+Nmap scan report for 10.10.97.86
+Host is up (0.29s latency).
+
+PORT      STATE SERVICE     VERSION
+54321/tcp open  ssl/unknown
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=localhost
+| Not valid before: 2024-05-03T04:55:11
+|_Not valid after:  2025-05-03T04:55:11
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, FourOhFourRequest, GenericLines, Help, Kerberos, LDAPBindReq, NCP, NotesRPC, RPCCheck, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServer, WMSRequest, X11Probe, oracle-tns: 
+|_    Error: 'undefined' is not authorized for access.
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port54321-TCP:V=7.94SVN%T=SSL%I=7%D=5/3%Time=66347711%P=x86_64-pc-linux
+SF:-gnu%r(GenericLines,31,"Error:\x20'undefined'\x20is\x20not\x20authorize
+SF:d\x20for\x20access\.\n")%r(RPCCheck,31,"Error:\x20'undefined'\x20is\x20
+SF:not\x20authorized\x20for\x20access\.\n")%r(DNSStatusRequestTCP,31,"Erro
+SF:r:\x20'undefined'\x20is\x20not\x20authorized\x20for\x20access\.\n")%r(H
+SF:elp,31,"Error:\x20'undefined'\x20is\x20not\x20authorized\x20for\x20acce
+SF:ss\.\n")%r(SSLSessionReq,31,"Error:\x20'undefined'\x20is\x20not\x20auth
+SF:orized\x20for\x20access\.\n")%r(TLSSessionReq,31,"Error:\x20'undefined'
+SF:\x20is\x20not\x20authorized\x20for\x20access\.\n")%r(Kerberos,31,"Error
+SF::\x20'undefined'\x20is\x20not\x20authorized\x20for\x20access\.\n")%r(SM
+SF:BProgNeg,31,"Error:\x20'undefined'\x20is\x20not\x20authorized\x20for\x2
+SF:0access\.\n")%r(X11Probe,31,"Error:\x20'undefined'\x20is\x20not\x20auth
+SF:orized\x20for\x20access\.\n")%r(FourOhFourRequest,31,"Error:\x20'undefi
+SF:ned'\x20is\x20not\x20authorized\x20for\x20access\.\n")%r(LDAPBindReq,31
+SF:,"Error:\x20'undefined'\x20is\x20not\x20authorized\x20for\x20access\.\n
+SF:")%r(TerminalServer,31,"Error:\x20'undefined'\x20is\x20not\x20authorize
+SF:d\x20for\x20access\.\n")%r(NCP,31,"Error:\x20'undefined'\x20is\x20not\x
+SF:20authorized\x20for\x20access\.\n")%r(NotesRPC,31,"Error:\x20'undefined
+SF:'\x20is\x20not\x20authorized\x20for\x20access\.\n")%r(WMSRequest,31,"Er
+SF:ror:\x20'undefined'\x20is\x20not\x20authorized\x20for\x20access\.\n")%r
+SF:(oracle-tns,31,"Error:\x20'undefined'\x20is\x20not\x20authorized\x20for
+SF:\x20access\.\n");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri May  3 13:33:57 2024 -- 1 IP address (1 host up) scanned in 73.69 seconds
