@@ -1,0 +1,7 @@
+/.php                [33m (Status: 403)[0m [Size: 277]
+/.html               [33m (Status: 403)[0m [Size: 277]
+/index.html          [32m (Status: 200)[0m [Size: 10918]
+/blog                [36m (Status: 301)[0m [Size: 311][34m [--> http://internal.thm/blog/][0m
+/wordpress           [36m (Status: 301)[0m [Size: 316][34m [--> http://internal.thm/wordpress/][0m
+/javascript          [36m (Status: 301)[0m [Size: 317][34m [--> http://internal.thm/javascript/][0m
+/phpmyadmin          [36m (Status: 301)[0m [Size: 317][34m [--> http://internal.thm/phpmyadmin/][0m
